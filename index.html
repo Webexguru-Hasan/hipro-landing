@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--style-css-here-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--responsive-css-here-->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!--swipper-css-->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  </head>
+  <body>
+    <!--header-->
+    <header class="nav-bar">
+      <div class="container">
+        <!--logo-->
+        <div class="logo">
+          <a href="/index.html">
+            <img src="./assets/logo/Logo.png" />
+          </a>
+        </div>
+        <!--menu-->
+        <ul>
+          <li>
+            <a href="/index.html">Home</a>
+            <img src="./assets/icons/menu-icon.png" alt="menu-icon" />
+          </li>
+          <li>
+            <a href="#">Pages</a>
+            <img src="./assets/icons/menu-icon.png" alt="menu-icon" />
+          </li>
+          <li>
+            <a href="#">Services</a>
+            <img src="./assets/icons/menu-icon.png" alt="menu-icon" />
+          </li>
+          <li>
+            <a href="#">Project</a>
+            <img src="./assets/icons/menu-icon.png" alt="menu-icon" />
+          </li>
+          <li>
+            <a href="#">Blog</a>
+            <img src="./assets/icons/menu-icon.png" alt="menu-icon" />
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <!--button-->
+        <button class="btn">GET STARTED</button>
+        <!--menu-toggle-btn-->
+        <img
+          onclick="handleOpen()"
+          class="open-toggle"
+          src="./assets/icons/nav-icon.png"
+          alt=""
+        />
+        <img
+          onclick="handleClose()"
+          class="close-toggle"
+          src="./assets/icons/close-menu.png"
+          alt=""
+        />
+
+        <!-- mobile-menu -->
+      </div>
+    </header>
+
+    <main>
+      <!--home-banner-->
+      <section class="home-wrapper">
+        <div class="container">
+          <span class="btn-light">Trusted Investment</span>
+          <h1>Updates, Regulations, & Your Investment Journey</h1>
+          <div class="cta-youtube-btn">
+            <button class="btn">
+              GET STARTED <img src="./assets/icons/btn-icon.png" alt="" />
+            </button>
+            <div class="youtube-btn">
+              <img src="./assets/icons/youtube-icon.png" alt="" />
+            </div>
+          </div>
+          <div>
+            <img
+              class="home-banner-img"
+              src="./assets/images/home-hero-img.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--company-brand-section-->
+      <section class="brand-wrapper">
+        <div class="container">
+          <img
+            src="./assets/images/brand-line-border.png"
+            alt=""
+            class="brand-wrapper__border-1"
+          />
+          <img
+            src="./assets/images/brand-line-border.png"
+            alt=""
+            class="brand-wrapper__border-2"
+          />
+          <div class="brand-img__container">
+            <div>
+              <img src="./assets/images/paper-brand.png" alt="paper-brand" />
+            </div>
+            <div>
+              <img src="./assets/images/dorfus-brand.png" alt="dorfus-brand" />
+            </div>
+            <div>
+              <img
+                src="./assets/images/martino-brand.png"
+                alt="martino-brand"
+              />
+            </div>
+            <div>
+              <img src="./assets/images/square-brand.png" alt="square-brand" />
+            </div>
+            <div>
+              <img src="./assets/images/gobonabrand.png" alt="gobona-brand" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--about-us-section-->
+      <section class="about-wraper">
+        <div class="container">
+          <div class="about-left">
+            <img src="./assets/images/about-us-img.png" alt="about-us-img" />
+          </div>
+          <div class="about-right">
+            <span class="btn-light">About Us</span>
+            <h2>Integrity, Transparency, and Investor Satisfaction</h2>
+            <p>
+              Creating content for a High-Yield Investment Program (HYIP)
+              website requires careful consideration of legal and ethical
+              guidelines. HYIPs can be risky investments
+            </p>
+            <button class="btn">More Details</button>
+          </div>
+        </div>
+      </section>
+
+      <!--services-section-->
+      <section class="service-wrapper">
+        <button class="btn-light">Our Services</button>
+        <h2>Our Advisory Services</h2>
+        <div class="container">
+          <!--card-1-->
+          <div class="service-card">
+            <div class="bg-icon">
+              <img src="./assets/images/investment-bg.png" alt="" />
+            </div>
+            <div class="card-content">
+              <img
+                src="./assets/icons/investment-icon.png"
+                alt="investment-icon"
+              />
+              <h4>Investment Plans</h4>
+              <p>
+                Offer various investment plans with different durations and
+                expected
+              </p>
+              <div class="card-btn">
+                <a href="#">View Details</a>
+                <img src="./assets/icons/Arrow - Right.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!--card-2-->
+          <div class="service-card">
+            <div class="bg-icon">
+              <img src="./assets/images/portfoliobg.png" alt="" />
+            </div>
+            <div class="card-content">
+              <img
+                src="./assets/icons/portfolio-icon.png"
+                alt="investment-icon"
+              />
+              <h4>Portfolio Management</h4>
+              <p>
+                Provide professional portfolio was in services, where investors'
+                funds.
+              </p>
+              <div class="card-btn">
+                <a href="#">View Details</a>
+                <img src="./assets/icons/Arrow - Right.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!--card-3-->
+          <div class="service-card">
+            <div class="bg-icon">
+              <img src="./assets/images/risk-bg.png" alt="" />
+            </div>
+            <div class="card-content">
+              <img src="./assets/icons/risk-icon.png" alt="investment-icon" />
+              <h4>Risk Analysis</h4>
+              <p>
+                Conduct thorough risk assessments and analysis of investment
+              </p>
+              <div class="card-btn">
+                <a href="#">View Details</a>
+                <img src="./assets/icons/Arrow - Right.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!--card-4-->
+          <div class="service-card">
+            <div class="bg-icon">
+              <img src="./assets/images/security-bg.png" alt="" />
+            </div>
+            <div class="card-content">
+              <img
+                src="./assets/icons/security-icon.png"
+                alt="investment-icon"
+              />
+              <h4>Security Features</h4>
+              <p>
+                Implement robust security measures to protect investors'
+                personal
+              </p>
+              <div class="card-btn">
+                <a href="#">View Details</a>
+                <img src="./assets/icons/Arrow - Right.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!--card-5-->
+          <div class="service-card">
+            <div class="bg-icon">
+              <img src="./assets/images/withdraw-bg.png" alt="" />
+            </div>
+            <div class="card-content">
+              <img
+                src="./assets/icons/withdraw-icon.png"
+                alt="investment-icon"
+              />
+              <h4>Withdrawal Services</h4>
+              <p>
+                Facilitate quick & secure withdrawals for investors to access
+                their funds
+              </p>
+              <div class="card-btn">
+                <a href="#">View Details</a>
+                <img src="./assets/icons/Arrow - Right.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!--card-6-->
+          <div class="service-card">
+            <div class="bg-icon">
+              <img src="./assets/images/referel-bg.png" alt="" />
+            </div>
+            <div class="card-content">
+              <img
+                src="./assets/icons/referel-icon.png"
+                alt="investment-icon"
+              />
+              <h4>Referral Programs</h4>
+              <p>
+                Offer referral programs or affiliate commissions to incentivize
+                investors
+              </p>
+              <div class="card-btn">
+                <a href="#">View Details</a>
+                <img src="./assets/icons/Arrow - Right.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--why-chhose-us-section-->
+      <section class="why-us__wrapper">
+        <div class="why-us__container">
+          <img
+            class="why-us_bg__shape"
+            src="./assets/shape/why-us-bg-shape.png"
+            alt="why-us-bg-shape"
+          />
+          <!--left-part-->
+          <div class="why-us__left">
+            <span class="btn-light">Why Choose Us</span>
+            <h2>Proven Track Record of Success</h2>
+            <p>
+              Creating content for a High-Yield Investment Program (HYIP)
+              website requires careful consideration.
+            </p>
+            <div class="line"></div>
+            <div class="working-process">
+              <div class="process">
+                <h3>No. 1</h3>
+                <p style="margin-top: 12px; line-height: 24px">
+                  Transparent Reporting
+                </p>
+              </div>
+              <div class="process">
+                <h3>No. 2</h3>
+                <p style="margin-top: 12px; line-height: 24px">
+                  Withdrawal Services
+                </p>
+              </div>
+            </div>
+            <button class="btn">More Details</button>
+          </div>
+          <!--right-part-->
+          <div class="why-us__right">
+            <div class="why-us__img">
+              <img src="./assets/images/why-us__img.png" alt="why-us__img" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--achievment-section-->
+      <section class="achievment-wrapper">
+        <div class="achievment-container">
+          <!--achievment-1-->
+          <div class="achievment-card">
+            <h3>99<span>%</span></h3>
+            <h6>Customer satisfaction</h6>
+          </div>
+          <!--achievment-2-->
+          <div class="achievment-card">
+            <h3>32<span>M</span></h3>
+            <h6>Active users</h6>
+          </div>
+          <!--achievment-3-->
+          <div class="achievment-card">
+            <h3>125<span>+</span></h3>
+            <h6>Team members</h6>
+          </div>
+          <!--achievment-4-->
+          <div class="achievment-card">
+            <h3>240<span>%</span></h3>
+            <h6>Company growth</h6>
+          </div>
+        </div>
+      </section>
+
+      <!--pricing-section-->
+      <section class="pricing-wrapper">
+        <button class="btn-light">Pricing Plan</button>
+        <h2>Choose Your Best Plan For Investing</h2>
+        <div class="pricing-container">
+          <!--pricing-card-1-->
+          <div class="pricing-card">
+            <div class="pricing-card__content">
+              <span>Starter Plan</span>
+              <h2>$100</h2>
+              <button>Get It Now</button>
+              <h6>1 business account</h6>
+              <h6>30 days Long</h6>
+              <div class="border-line"></div>
+              <h3>Key Features :</h3>
+              <div class="features-item">
+              <div class="items">
+                <img src="./assets/icons/Check.png" alt="">
+                <span>Basic Moderate Returns</span>
+              </div>
+              <div class="items">
+                <img src="./assets/icons/Check.png" alt="">
+                <span>Expected Return 5% to 7$</span>
+              </div>
+              <div class="items">
+                <img src="./assets/icons/Check.png" alt="">
+                <span>General Support</span>
+              </div>
+              </div>
+
+            </div>
+          </div>
+          <!--pricing-card-2-->
+          <div class="pricing-card">
+            <div class="pricing-card__content">
+              <span>Standard Plan</span>
+              <h2>$500</h2>
+              <button>Get It Now</button>
+              <h6>5 business account</h6>
+              <h6>60 days Long</h6>
+              <div class="border-line"></div>
+              <h3>Key Features :</h3>
+              <div class="features-item">
+              <div class="items">
+                <img src="./assets/icons/Check.png" alt="">
+                <span>Intermediate Higher Returns</span>
+              </div>
+              <div class="items">
+                <img src="./assets/icons/Check.png" alt="">
+                <span>Expected Return 8% to 10$</span>
+              </div>
+              <div class="items">
+                <img src="./assets/icons/Check.png" alt="">
+                <span>Priority Support</span>
+              </div>
+              </div>
+
+            </div>
+          </div>
+          <!--pricing-card-3-->
+          <div class="pricing-card">
+            <div class="pricing-card__content">
+              <span>Advanced Plan</span>
+              <h2>$1,000</h2>
+              <button>Get It Now</button>
+              <h6>10 business account</h6>
+              <h6>90 days Long</h6>
+              <div class="border-line"></div>
+              <h3>Key Features :</h3>
+              <div class="features-item">
+              <div class="items">
+                <img src="./assets/icons/Check.png" alt="">
+                <span>Advanced Higher Returns</span>
+              </div>
+              <div class="items">
+                <img src="./assets/icons/Check.png" alt="">
+                <span>Expected Return 12% to 15$</span>
+              </div>
+              <div class="items">
+                <img src="./assets/icons/Check.png" alt="">
+                <span>Premium Support</span>
+              </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--FAQ-section-->
+      <section class="faq-wrapper">
+        <div class="faq-container">
+          <!--faq-left-->
+          <div class="faq-left">
+            <span class="btn-light">FAQ</span>
+            <h2>Frequently Asked Question</h2>
+            <p>Holisticly predominate revolutionar value without robust manufacturey products credibly evisculate.</p>
+            <button class="btn">Contact Us</button>
+          </div>
+          <!--faq-right-->
+          <div class="faq-right">
+            <div class="faq-shape">
+              <img src="./assets/images/faq-Cylinder Aestrick.png" alt="" class="shape-1">
+              <img src="./assets/images/faq-8-star.png" alt="" class="shape-2">
+            </div>
+            <!--faq-item-->
+            <div class="accordion-container">
+              <!--item-1-->
+              <div class="accordion-item active">
+                <button class="accordion-btn" id="accordion-btn">
+                  How Can I Pay?
+                  <div class="icons">
+                    <img class="plus-icon btn-icon" src="./assets/icons/faq-plus.png" alt="">
+                    <img class="minus-icon btn-icon" src="./assets/icons/faq-minus.png" alt="">
+                  </div>
+                </button>
+                <div class="accordion-description">
+                  <span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou, or words which don't look even slightly believable.</span>
+                </div>
+              </div>
+              <!--item-2-->
+              <div class="accordion-item">
+                <button class="accordion-btn" id="accordion-btn">
+                  How Does It Work?
+                  <div class="icons">
+                    <img class="plus-icon btn-icon" src="./assets/icons/faq-plus.png" alt="">
+                    <img class="minus-icon btn-icon" src="./assets/icons/faq-minus.png" alt="">
+                  </div>
+                </button>
+                <div class="accordion-description">
+                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, assumenda.</span>
+                </div>
+              </div>
+              <!--item-3-->
+              <div class="accordion-item">
+                <button class="accordion-btn" id="accordion-btn">
+                  What Is Process To Get Expert Team?
+                  <div class="icons">
+                    <img class="plus-icon btn-icon" src="./assets/icons/faq-plus.png" alt="">
+                    <img class="minus-icon btn-icon" src="./assets/icons/faq-minus.png" alt="">
+                  </div>
+                </button>
+                <div class="accordion-description">
+                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, assumenda.</span>
+                </div>
+              </div>
+              <!--item-4-->
+              <div class="accordion-item">
+                <button class="accordion-btn" id="accordion-btn">
+                  How Can I Migrate To Another Site?
+                  <div class="icons">
+                    <img class="plus-icon btn-icon" src="./assets/icons/faq-plus.png" alt="">
+                    <img class="minus-icon btn-icon" src="./assets/icons/faq-minus.png" alt="">
+                  </div>
+                </button>
+                <div class="accordion-description">
+                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, assumenda.</span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!--testimonial-section-->
+      <section class="testimonial-wrapper">
+        <span class="btn-light">
+          Testimonial
+        </span>
+        <h2>Our Clients Feedback</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-track">
+          <!--testimonial-1-->
+          <div class="testimonial-item">
+            <!--quote-->
+            <div class="quote">
+            <img src="./assets/icons/quote.png" alt="">
+            </div>
+            <!--client-feedback-->
+            <div class="feedback">
+              <span>“ I’ve been investing with  for several months now, and I've been consistently impressed ”</span>
+            </div>
+            <!--5-star-->
+            <div class="star">
+              <img src="./assets/icons/5-start.png" alt="">
+            </div>
+            <h4 class="client-name">Annette Black</h4>
+            <p class="client-position">President of Sales</p>
+          </div>
+          <!--testimonial-2-->
+          <div class="testimonial-item">
+            <!--quote-->
+            <div class="quote">
+            <img src="./assets/icons/quote.png" alt="">
+            </div>
+            <!--client-feedback-->
+            <div class="feedback">
+              <span>“ I’ve been investing with  for several months now, and I've been consistently impressed ”</span>
+            </div>
+            <!--5-star-->
+            <div class="star">
+              <img src="./assets/icons/5-start.png" alt="">
+            </div>
+            <h4 class="client-name">Annette Black</h4>
+            <p class="client-position">President of Sales</p>
+          </div>
+          <!--testimonial-3-->
+          <div class="testimonial-item">
+            <!--quote-->
+            <div class="quote">
+            <img src="./assets/icons/quote.png" alt="">
+            </div>
+            <!--client-feedback-->
+            <div class="feedback">
+              <span>“ I’ve been investing with  for several months now, and I've been consistently impressed ”</span>
+            </div>
+            <!--5-star-->
+            <div class="star">
+              <img src="./assets/icons/5-start.png" alt="">
+            </div>
+            <h4 class="client-name">Annette Black</h4>
+            <p class="client-position">President of Sales</p>
+          </div>
+          
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+         
+         
+        </div>
+      </div>
+    </section>
+
+      <!--blog-section-->
+      <!-- <section class="blog-wrapper swiper">
+        <div class="blog-container">
+        
+          <div class="blog-header">
+            <div class="header-left">
+              <span class="btn-light">Our Blogs</span>
+              <h2>Latest Article</h2>
+            </div>
+            <div class="header-right">
+              <div class="blog-slider">
+                <div id="prev-btn" class="swiper-button-prev">
+                  <img src="./assets/icons/prev-btn.png" alt="">
+                </div>
+                <div id="next-btn" class="swiper-button-next">
+                  <img src="./assets/icons/next-btn.png" alt="">
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="blog-content swiper-wrapper">
+          
+            <div class="article swiper-slide">
+              <img src="./assets/images/blog-img-1.png" alt="" class="article-img">
+            </div>
+          
+            <div class="article swiper-slide">
+              <img src="./assets/images/blog-img-2.png" alt="" class="article-img">
+            </div>
+            
+            <div class="article swiper-slide">
+              <img src="./assets/images/blog-img-3.png" alt="" class="article-img">
+            </div>
+            
+            <div class="article swiper-slide">
+              <img src="./assets/images/blog-img-3.png" alt="" class="article-img">
+            </div>
+          
+            <div class="article swiper-slide">
+              <img src="./assets/images/blog-img-3.png" alt="" class="article-img">
+            </div>
+          </div>
+        </div>
+      </section> -->
+    
+      <section class="blog-wrapper">
+        <div class="swiper blog-container">
+          <div class="blog-header">
+            <div class="header-left">
+              <span class="btn-light">Our Blogs</span>
+              <h2>Latest Blog</h2>
+            </div>
+            <div class="header-right">
+              <div class="blog-slider">
+                <div class="swiper-btn-prev">
+                  <img src="./assets/icons/prev-btn.png" alt="">
+                </div>
+                <div class="swiper-btn-next">
+                  <img src="./assets/icons/next-btn.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper blog-content">
+              <!-- Slides-1 -->
+            <div class="swiper-slide article">
+              <img src="./assets/images/blog-img-1.png" alt="" class="article-img">
+              <div class="article-text-image">
+                <img src="./assets/shape/blog-bg-blur-1.png" alt="">
+                <div class="article-text">
+                  <span>Research , Technology</span>
+                  <h3>Navigating the World of High-Yield Investments: A Beginner's Guide</h3>
+                  <div class="user-time">
+                    <div class="user">
+                      <img src="./assets/icons/Add-User.png" alt="">
+                      <span>Samir Jam</span>
+                    </div>
+                    <div class="time">
+                      <img src="./assets/icons/Time-Circle.png" alt="">
+                      <span>21 Jan 2024</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+              <!--slide-2-->
+              <div class="swiper-slide article">
+                <img src="./assets/images/blog-img-2.png" alt="" class="article-img">
+                <div class="article-text-image">
+                  <img src="./assets/shape/blog-bg-blur-2.png" alt="">
+                  <div class="article-text">
+                    <span>Research , Technology</span>
+                    <h3>Navigating the World of High-Yield Investments: A Beginner's Guide</h3>
+                    <div class="user-time">
+                      <div class="user">
+                        <img src="./assets/icons/Add-User.png" alt="">
+                        <span>Samir Jam</span>
+                      </div>
+                      <div class="time">
+                        <img src="./assets/icons/Time-Circle.png" alt="">
+                        <span>21 Jan 2024</span>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div> 
+              </div>
+              <!--slide-3-->
+              <div class="swiper-slide article">
+                <img src="./assets/images/blog-img-3.png" alt="" class="article-img">
+                <div class="article-text-image">
+                  <img src="./assets/shape/blog-bg-blur-3.png" alt="">
+                  <div class="article-text">
+                    <span>Research , Technology</span>
+                    <h3>Navigating the World of High-Yield Investments: A Beginner's Guide</h3>
+                    <div class="user-time">
+                      <div class="user">
+                        <img src="./assets/icons/Add-User.png" alt="">
+                        <span>Samir Jam</span>
+                      </div>
+                      <div class="time">
+                        <img src="./assets/icons/Time-Circle.png" alt="">
+                        <span>21 Jan 2024</span>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div> 
+              </div>
+
+              <div class="swiper-slide article">
+                <img src="./assets/images/blog-img-1.png" alt="" class="article-img">
+                <div class="article-text-image">
+                  <img src="./assets/shape/blog-bg-blur-1.png" alt="">
+                  <div class="article-text">
+                    <span>Research , Technology</span>
+                    <h3>Navigating the World of High-Yield Investments: A Beginner's Guide</h3>
+                    <div class="user-time">
+                      <div class="user">
+                        <img src="./assets/icons/Add-User.png" alt="">
+                        <span>Samir Jam</span>
+                      </div>
+                      <div class="time">
+                        <img src="./assets/icons/Time-Circle.png" alt="">
+                        <span>21 Jan 2024</span>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div> 
+              </div>
+
+              <div class="swiper-slide article">
+                <img src="./assets/images/blog-img-2.png" alt="" class="article-img"> 
+                <div class="article-text-image">
+                  <img src="./assets/shape/blog-bg-blur-2.png" alt="">
+                  <div class="article-text">
+                    <span>Research , Technology</span>
+                    <h3>Navigating the World of High-Yield Investments: A Beginner's Guide</h3>
+                    <div class="user-time">
+                      <div class="user">
+                        <img src="./assets/icons/Add-User.png" alt="">
+                        <span>Samir Jam</span>
+                      </div>
+                      <div class="time">
+                        <img src="./assets/icons/Time-Circle.png" alt="">
+                        <span>21 Jan 2024</span>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+    
+        
+    </section>
+    
+    </main>
+
+    <footer class="fotter-wrapper">
+      <div class="fotter-container">
+        <!--pre-fotter-->
+        <div class="pre-fotter">
+          <div class="pre-fotter-bg">
+            <img src="./assets/images/pre-fotter-bg.png" alt="">
+          </div>
+          <h2>Have a project in mind?
+            Let’s get to work.</h2>
+            <button class="btn">
+              Contact Us
+            </button>
+        </div>
+        <!--main-fotter-->
+        <div class="main-fotter">
+          <!--column-one-->
+          <div class="fotter-left">
+            <div class="main-fotter-bg">
+              <img src="./assets/images/main-fotter-bg.png" alt="">
+            </div>
+            <img src="./assets/logo/Logo.png" alt="">
+            <div style="margin-top: 30px;">
+              <span>Understanding Risk Management in High-Yield Investment Programs Investments: Tips for Success</span>
+            </div>
+            
+            <p style="margin-top: 80px;">Hipre© 2024, All Rights Reserved</p>
+          </div>
+          <!--column-two-->
+          <div class="essential-link">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Policy</a></li>
+              <li><a href="#">Refund</a></li>
+            </ul>
+          </div>
+          <!--column-three-->
+          <div class="info">
+            <h6>hipre.investment@example.com</h6>
+            <span>4517 Washington Ave. Manchester, 
+              Kentucky 39495</span>
+
+              <div class="social-icon">
+                <a href="#" class="social">
+                  <img src="./assets/icons/facebook.png" alt="">
+                </a>
+                <a href="#" style="background: linear-gradient(to right, #0ef1ff, #deff10); border: none;">
+                  <img src="./assets/icons/twitter.png" alt="">
+                </a>
+                <a href="#" class="social">
+                  <img src="./assets/icons/instagram.png" alt="">
+                </a>
+                <a href="#" class="social">
+                  <img src="./assets/icons/youtube.png" alt="">
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/mane.js"></script>
+
+
+  </body>
+</html>
