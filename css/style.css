@@ -198,14 +198,12 @@ company-brand-css */
   margin-top: 150px;
 }
 .brand-wrapper > .container {
-  width: 100%;
+  width: 90%;
   max-width: 1580px;
   margin: auto;
   height: 100%;
   position: relative;
-  /* border: solid;
-  border-width: 3px;
-  border-image: linear-gradient(to left, #383838, #181818) 100; */
+  
 }
 
 .brand-wrapper > .container > .brand-wrapper__border-1 {
@@ -235,7 +233,7 @@ company-brand-css */
   margin: 100px 0px;
 }
 .about-wraper > .container {
-  width: 100%;
+  width: 90%;
   max-width: 1290px;
   margin: auto;
   height: 641px;

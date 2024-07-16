@@ -22,4 +22,32 @@
         width: 100%;
         height: 100%;
       }
+
+      /* company-css */
+      .brand-wrapper{
+        margin-top: 50px;
+
+      }
+      .brand-wrapper > .container > .brand-wrapper__border-1, .brand-wrapper__border-2{
+        display: none;
+      }
+      .brand-wrapper > .container > .brand-img__container{
+        display: flex;
+        width: 100%;
+        gap: 30px;
+      }
+      .brand-wrapper > .container > .brand-img__container > div > img{
+        width: 100%;
+        height: 100%;
+      }
+      /* about-css */
+      .about-wraper{
+        margin-top: 0px;
+        height: 100vh;
+        gap: 0px;
+      }
+      .about-wraper > .container{
+        flex-direction: column;
+      }
+      
 }
