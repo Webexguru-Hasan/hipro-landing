@@ -603,7 +603,7 @@ company-brand-css */
   padding: 80px 0px;
 }
 .faq-wrapper > .faq-container {
-  width: 100%;
+  width: 90%;
   max-width: 1290px;
   margin: auto;
   display: flex;

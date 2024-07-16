@@ -156,4 +156,23 @@
       .pricing-wrapper > .pricing-container > .pricing-card{
         max-width: 100%;
       }
+      /* FAQ-css */
+      .faq-wrapper{
+        width: 100%;
+        height: auto;
+        padding: 50px 0px;
+      }
+      .faq-wrapper > .faq-container {
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+        gap: 50px;
+      }
+      .faq-wrapper > .faq-container .faq-left{
+        max-width: 100%;
+      }
+      .faq-right > .accordion-container > .accordion-item > .accordion-btn{
+        text-align: left;
+        font-size: 20px;
+      }
 }
