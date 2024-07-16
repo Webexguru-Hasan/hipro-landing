@@ -286,7 +286,7 @@ company-brand-css */
 
 /* Container inside Service Wrapper */
 .service-wrapper > .container {
-  width: 100%;
+  width: 90%;
   max-width: 1290px;
   display: flex;
   justify-content: space-between;
