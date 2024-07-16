@@ -506,7 +506,7 @@ company-brand-css */
   padding: 150px 0;
 }
 .pricing-wrapper > .pricing-container {
-  width: 100%;
+  width: 90%;
   max-width: 1290px;
   display: flex;
   justify-content: space-between;
