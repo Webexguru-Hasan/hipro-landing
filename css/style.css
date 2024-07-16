@@ -368,7 +368,7 @@ company-brand-css */
   padding: 96px 0px 150px;
 }
 .why-us__wrapper > .why-us__container {
-  width: 100%;
+  width: 90%;
   max-width: 1290px;
   margin: auto;
   display: flex;
@@ -458,7 +458,7 @@ company-brand-css */
   background-size: cover;
 }
 .achievment-wrapper > .achievment-container {
-  width: 100%;
+  width: 90%;
   max-width: 1290px;
   height: 100%;
   margin: auto;
