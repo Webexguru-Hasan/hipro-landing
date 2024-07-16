@@ -766,10 +766,13 @@ company-brand-css */
   background-image: url("../assets/shape/testimonial-bg-blur.png");
 }
 
-/* .testimonial-item.focus {
+.testimonial-item.focus {
   transform: scale(1.1);
   opacity: 1;
-} */
+  background-image: url('../assets/images/focus-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .testimonial-item > .feedback {
   margin-top: 20px;
 }
@@ -962,9 +965,7 @@ text-transform: uppercase;
   padding-top: 180px;
   position: relative;
 }
-/* .fotter-wrapper > .fotter-container > .main-fotter > .fotter-left {
-  width: 33.33%;
-} */
+
 .fotter-wrapper > .fotter-container > .main-fotter > .fotter-left > .main-fotter-bg > img {
   position: absolute;
   left: 10%;
@@ -976,9 +977,7 @@ text-transform: uppercase;
   font-family: inter-500;
   line-height: 40px;  
 }
-/* .fotter-wrapper > .fotter-container > .main-fotter > .essential-link {
-  width: 33.33%;
-} */
+
 .fotter-wrapper > .fotter-container > .main-fotter > .essential-link > ul {
   display: flex;
   flex-direction: column;
@@ -989,9 +988,6 @@ text-transform: uppercase;
  font-size: 18px;
  font-family: inter-400;
 }
-/* .fotter-wrapper > .fotter-container > .main-fotter > .info{
-  width: 33.33%;
-} */
 .fotter-wrapper > .fotter-container > .main-fotter > .info > h6{
 color: var(--secondary-color);
 font-size: 24px;
